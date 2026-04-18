@@ -45,7 +45,7 @@ export function CategoryFilter({
               "inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 font-mono text-xs uppercase tracking-[0.15em] transition",
               active
                 ? "border-neon-green bg-neon-green/10 text-neon-green shadow-neon"
-                : "border-line bg-bg-soft text-zinc-300 hover:border-neon-green/50 hover:text-neon-green",
+                : "border-line bg-bg-soft text-fg-soft hover:border-neon-green/50 hover:text-neon-green",
             ].join(" ")}
           >
             <span>{it.name}</span>

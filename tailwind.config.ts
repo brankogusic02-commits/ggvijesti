@@ -11,16 +11,20 @@ const config: Config = {
     extend: {
       colors: {
         bg: {
-          DEFAULT: "#0a0a0f",
-          soft: "#111118",
-          elev: "#16161f",
+          DEFAULT: "rgb(var(--c-bg) / <alpha-value>)",
+          soft: "rgb(var(--c-bg-soft) / <alpha-value>)",
+          elev: "rgb(var(--c-bg-elev) / <alpha-value>)",
         },
+        line: "rgb(var(--c-line) / <alpha-value>)",
+        fg: {
+          DEFAULT: "rgb(var(--c-fg) / <alpha-value>)",
+          soft: "rgb(var(--c-fg-soft) / <alpha-value>)",
+        },
+        muted: "rgb(var(--c-muted) / <alpha-value>)",
         neon: {
-          green: "#39ff9c",
-          purple: "#b47bff",
+          green: "rgb(var(--c-accent) / <alpha-value>)",
+          purple: "rgb(var(--c-accent-2) / <alpha-value>)",
         },
-        line: "#22222c",
-        muted: "#8b8b9a",
       },
       fontFamily: {
         display: ["var(--font-orbitron)", "ui-sans-serif", "system-ui"],
@@ -28,12 +32,9 @@ const config: Config = {
         mono: ["ui-monospace", "SFMono-Regular", "monospace"],
       },
       boxShadow: {
-        neon: "0 0 24px rgba(57,255,156,0.25), 0 0 2px rgba(57,255,156,0.6)",
-        "neon-purple": "0 0 24px rgba(180,123,255,0.25), 0 0 2px rgba(180,123,255,0.6)",
-      },
-      backgroundImage: {
-        "grid-faint":
-          "linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px)",
+        neon: "0 0 24px rgb(var(--c-accent) / 0.25), 0 0 2px rgb(var(--c-accent) / 0.6)",
+        "neon-purple":
+          "0 0 24px rgb(var(--c-accent-2) / 0.25), 0 0 2px rgb(var(--c-accent-2) / 0.6)",
       },
     },
   },

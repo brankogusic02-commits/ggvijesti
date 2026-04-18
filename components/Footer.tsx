@@ -19,7 +19,7 @@ export function Footer() {
             <Link
               key={c.slug}
               href={`/category/${c.slug}/`}
-              className="text-sm text-zinc-300 transition hover:text-neon-green"
+              className="text-sm text-fg-soft transition hover:text-neon-green"
             >
               {c.name}
             </Link>

@@ -47,7 +47,7 @@ export default function CategoryPage({
         <h1 className="mt-2 font-display text-4xl font-bold tracking-tight md:text-5xl">
           {cat.name}
         </h1>
-        <p className="mt-3 max-w-2xl text-lg text-zinc-300">{cat.blurb}</p>
+        <p className="mt-3 max-w-2xl text-lg text-fg-soft">{cat.blurb}</p>
       </header>
 
       {posts.length === 0 ? (

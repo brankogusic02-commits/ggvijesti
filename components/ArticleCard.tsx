@@ -50,13 +50,13 @@ export function ArticleCard({
           </div>
 
           <h3
-            className={`font-display font-bold leading-tight tracking-tight text-zinc-50 transition-colors group-hover:text-neon-green ${
+            className={`font-display font-bold leading-tight tracking-tight text-fg transition-colors group-hover:text-neon-green ${
               featured ? "text-2xl md:text-3xl" : "text-lg"
             }`}
           >
             {post.title}
           </h3>
-          <p className="line-clamp-3 text-sm text-zinc-300">{post.excerpt}</p>
+          <p className="line-clamp-3 text-sm text-fg-soft">{post.excerpt}</p>
 
           <div className="mt-auto pt-2 text-xs text-muted">by {post.author}</div>
         </div>

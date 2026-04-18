@@ -12,7 +12,7 @@ export function Header() {
           aria-label="GGVijesti home"
         >
           <LogoMark />
-          <span className="font-display text-xl font-bold tracking-wider text-zinc-50 glitch-hover">
+          <span className="font-display text-xl font-bold tracking-wider text-fg glitch-hover">
             GG<span className="text-neon-green">Vijesti</span>
           </span>
         </Link>
@@ -22,7 +22,7 @@ export function Header() {
             <Link
               key={c.slug}
               href={`/category/${c.slug}/`}
-              className="rounded-full px-3 py-1.5 text-sm text-zinc-300 transition hover:bg-bg-soft hover:text-neon-green"
+              className="rounded-full px-3 py-1.5 text-sm text-fg-soft transition hover:bg-bg-soft hover:text-neon-green"
             >
               {c.name}
             </Link>

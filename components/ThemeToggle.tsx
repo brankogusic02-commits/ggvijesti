@@ -16,7 +16,7 @@ export function ThemeToggle() {
       type="button"
       aria-label={`Switch to ${next} mode`}
       onClick={() => setTheme(next)}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-line bg-bg-soft text-zinc-300 transition hover:border-neon-green hover:text-neon-green"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-line bg-bg-soft text-fg-soft transition hover:border-neon-green hover:text-neon-green"
     >
       <span aria-hidden className="text-base">
         {mounted ? (isDark ? "◐" : "◑") : "◐"}

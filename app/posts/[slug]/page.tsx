@@ -60,13 +60,13 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         <span aria-hidden>·</span>
         <span>{post.readingMinutes} min read</span>
         <span aria-hidden>·</span>
-        <span className="text-zinc-300 dark:text-zinc-300">by {post.author}</span>
+        <span className="text-fg-soft">by {post.author}</span>
       </div>
 
-      <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-tight text-zinc-50 md:text-5xl">
+      <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-tight text-fg md:text-5xl">
         {post.title}
       </h1>
-      <p className="mt-4 text-lg text-zinc-300 md:text-xl">{post.excerpt}</p>
+      <p className="mt-4 text-lg text-fg-soft md:text-xl">{post.excerpt}</p>
 
       <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-2xl border border-line bg-bg-soft">
         <Image
@@ -79,7 +79,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         />
       </div>
 
-      <div className="prose prose-invert mt-10 max-w-none prose-headings:font-display prose-p:text-zinc-200 prose-p:leading-relaxed prose-strong:text-zinc-50 prose-li:text-zinc-200">
+      <div className="prose dark:prose-invert mt-10 max-w-none prose-headings:font-display prose-p:text-fg-soft prose-p:leading-relaxed prose-strong:text-fg prose-li:text-fg-soft">
         <MDXRemote
           source={post.content}
           components={mdxComponents}

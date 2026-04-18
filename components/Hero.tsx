@@ -17,13 +17,13 @@ export function Hero() {
           Live patch — v{new Date().getFullYear()}
         </span>
 
-        <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-zinc-50 md:text-6xl lg:text-7xl">
+        <h1 className="font-display text-4xl font-bold leading-[1.05] tracking-tight text-fg md:text-6xl lg:text-7xl">
           GG<span className="text-neon-green">Vijesti</span>
-          <span className="block text-zinc-300">Real world.</span>
+          <span className="block text-fg-soft">Real world.</span>
           <span className="block text-neon-purple">Gaming mindset.</span>
         </h1>
 
-        <p className="max-w-2xl text-lg text-zinc-300 md:text-xl">
+        <p className="max-w-2xl text-lg text-fg-soft md:text-xl">
           Svijet kao open-world. Vijesti kao patch notes. Pratimo domace i svjetske
           eventove iz gamer perspektive — bez stream-sniping, samo cista dostava.
         </p>
@@ -37,7 +37,7 @@ export function Hero() {
           </a>
           <a
             href="/category/hr-server/"
-            className="inline-flex items-center gap-2 rounded-full border border-line bg-bg-soft px-5 py-2.5 font-display text-sm font-semibold uppercase tracking-wider text-zinc-200 transition hover:border-neon-purple/60 hover:text-neon-purple"
+            className="inline-flex items-center gap-2 rounded-full border border-line bg-bg-soft px-5 py-2.5 font-display text-sm font-semibold uppercase tracking-wider text-fg transition hover:border-neon-purple/60 hover:text-neon-purple"
           >
             HR server ▸
           </a>

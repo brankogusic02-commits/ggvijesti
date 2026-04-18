@@ -2,43 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: dark;
-}
+@layer base {
+  :root {
+    --c-bg: 10 10 15;
+    --c-bg-soft: 17 17 24;
+    --c-bg-elev: 22 22 31;
+    --c-line: 34 34 44;
+    --c-fg: 244 244 245;
+    --c-fg-soft: 212 212 216;
+    --c-muted: 139 139 154;
+    --c-accent: 57 255 156;
+    --c-accent-2: 180 123 255;
+    --c-grid: 255 255 255;
+    --grid-opacity: 0.04;
+    color-scheme: dark;
+  }
 
-html,
-body {
-  min-height: 100%;
-}
+  html.light {
+    --c-bg: 250 250 252;
+    --c-bg-soft: 255 255 255;
+    --c-bg-elev: 241 241 247;
+    --c-line: 224 224 230;
+    --c-fg: 18 18 26;
+    --c-fg-soft: 52 52 64;
+    --c-muted: 100 100 114;
+    --c-accent: 20 160 90;
+    --c-accent-2: 124 58 237;
+    --c-grid: 0 0 0;
+    --grid-opacity: 0.06;
+    color-scheme: light;
+  }
 
-body {
-  @apply bg-bg text-zinc-100 font-sans antialiased;
-  background-image:
-    radial-gradient(1200px 600px at 10% -10%, rgba(180, 123, 255, 0.08), transparent 60%),
-    radial-gradient(1000px 500px at 110% 10%, rgba(57, 255, 156, 0.06), transparent 60%);
-}
+  html,
+  body {
+    min-height: 100%;
+  }
 
-html.light body {
-  @apply bg-white text-zinc-900;
-  background-image:
-    radial-gradient(1200px 600px at 10% -10%, rgba(180, 123, 255, 0.12), transparent 60%),
-    radial-gradient(1000px 500px at 110% 10%, rgba(57, 200, 130, 0.1), transparent 60%);
-}
+  body {
+    @apply bg-bg text-fg font-sans antialiased;
+    background-image:
+      radial-gradient(1200px 600px at 10% -10%, rgb(var(--c-accent-2) / 0.1), transparent 60%),
+      radial-gradient(1000px 500px at 110% 10%, rgb(var(--c-accent) / 0.08), transparent 60%);
+  }
 
-::selection {
-  background: rgba(57, 255, 156, 0.35);
-  color: white;
+  ::selection {
+    background: rgb(var(--c-accent) / 0.35);
+    color: white;
+  }
 }
 
 .grid-bg {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgb(var(--c-grid) / var(--grid-opacity)) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--c-grid) / var(--grid-opacity)) 1px, transparent 1px);
   background-size: 40px 40px;
-}
-
-html.light .grid-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
 }
 
 .glitch-hover {
@@ -46,6 +63,6 @@ html.light .grid-bg {
 }
 .glitch-hover:hover {
   text-shadow:
-    0 0 6px rgba(57, 255, 156, 0.45),
-    0 0 14px rgba(57, 255, 156, 0.25);
+    0 0 6px rgb(var(--c-accent) / 0.45),
+    0 0 14px rgb(var(--c-accent) / 0.25);
 }

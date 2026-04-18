@@ -9,7 +9,7 @@ export default function NotFound() {
       <h1 className="mt-4 font-display text-5xl font-bold tracking-tight md:text-7xl">
         You fell out of the map.
       </h1>
-      <p className="mt-4 max-w-lg text-lg text-zinc-300">
+      <p className="mt-4 max-w-lg text-lg text-fg-soft">
         Ova stranica je despawnala. Respawn na homepage i pokusaj ponovo.
       </p>
       <Link

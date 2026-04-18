@@ -51,7 +51,7 @@ export function HomeFeed({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search the lobby…"
-            className="w-full rounded-full border border-line bg-bg-soft px-4 py-2.5 pl-10 text-sm text-zinc-100 placeholder:text-muted focus:border-neon-green focus:outline-none focus:ring-2 focus:ring-neon-green/30"
+            className="w-full rounded-full border border-line bg-bg-soft px-4 py-2.5 pl-10 text-sm text-fg placeholder:text-muted focus:border-neon-green focus:outline-none focus:ring-2 focus:ring-neon-green/30"
           />
           <span
             aria-hidden
@@ -73,7 +73,7 @@ export function HomeFeed({
 
       {filtered.length === 0 ? (
         <div className="mt-20 rounded-2xl border border-dashed border-line bg-bg-soft/40 py-16 text-center">
-          <p className="font-display text-xl text-zinc-200">No matches.</p>
+          <p className="font-display text-xl text-fg">No matches.</p>
           <p className="mt-2 text-sm text-muted">
             Lobby je prazan — probaj drugu kategoriju ili brisi search.
           </p>
