@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="g1" cx="15%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#b47bff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="90%" cy="90%" r="60%">
+      <stop offset="0%" stop-color="#39ff9c" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0a0a0f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0a0a0f"/>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+  <rect width="1200" height="630" fill="url(#g2)"/>
+  <g font-family="Orbitron, Arial Black, sans-serif" font-weight="900">
+    <text x="80" y="280" font-size="130" fill="#f4f4f5">GG<tspan fill="#39ff9c">Vijesti</tspan></text>
+    <text x="82" y="360" font-size="44" fill="#d4d4d8" font-weight="600" font-family="Rajdhani, Arial, sans-serif">Real world. Gaming mindset.</text>
+    <text x="82" y="560" font-size="22" fill="#8b8b9a" font-family="ui-monospace, monospace" letter-spacing="4">GGVIJESTI.COM</text>
+  </g>
+</svg>
